@@ -1,0 +1,76 @@
+*{
+    box-sizing: border-box;
+    overflow: hidden;
+    font-family: '標楷體';
+}
+body{/*這裡要注意不用設class*/
+    width: 1024px;
+    height: 768px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0px 12px;/*要設*/
+    margin: 10px auto;/*要設*/
+}
+body>*:not(.left,.right),
+.left>*,
+.right>*{border: 1px solid lightgray;}
+
+.top{
+height: 65px;
+width: 1000px;
+}
+.left{
+    display: flex;
+    flex-direction: column;
+flex-basis: 215px;
+height: calc(768px - 65px - 20px);
+}
+.menu{
+flex-basis: calc(100% - 25px);
+font-weight: 500;
+text-align: center;/*這裡要記得打，整個格子圖片才會置中*/
+}
+.first{
+    font-size: 24px;
+    text-decoration: underline;
+    text-align: center;
+    color: #FF00FF;
+    margin:20px ;
+}
+.menu a{   
+    display: inline-block;
+    color: #000000;
+    font-size: 16px;
+    width: 200px;
+    height: 35px;
+    background: url(/images/menu1.png);
+    padding-top: 9px;    
+}
+.menu a:hover{
+    background: url(/images/menu2.png);
+}
+.update{
+    flex-basis: 25px;
+    color: #000000;
+    text-align: center;
+    font-size: 16px;
+}
+.right{
+flex-basis: calc(1000px - 215px);
+display: flex;
+    flex-direction: column;
+}
+.marquee{
+flex-basis: 29px;
+font-size: 24px;
+color: #0000FF;
+}
+.content{
+    flex-basis: calc(100% - 29px);
+}
+.footer{
+flex-basis: 1000px;
+height: 20px;
+text-align: center;
+}
