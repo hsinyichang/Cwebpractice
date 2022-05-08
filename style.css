@@ -44,11 +44,11 @@ text-align: center;/*這裡要記得打，整個格子圖片才會置中*/
     font-size: 16px;
     width: 200px;
     height: 35px;
-    background: url(/images/menu1.png);
+    background: url(./images/menu1.png);
     padding-top: 9px;    
 }
 .menu a:hover{
-    background: url(/images/menu2.png);
+    background: url(./images/menu2.png);
 }
 .update{
     flex-basis: 25px;
